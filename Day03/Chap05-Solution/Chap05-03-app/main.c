@@ -22,10 +22,10 @@ int main() {
 	a = 0;
 
 	while (a > 0) {
-		printf("while 실행!\n");
+		printf("while 실행!\n"); // 출력 안 됨
 		a--;
 	}
-	printf("while문 종료\n");
+	printf("while문 종료\n"); // 얘만 출력됨
 
 
 	/*
@@ -44,10 +44,10 @@ int main() {
 	a = 0;
 
 	do {
-		printf("do~while 실행!\n");
+		printf("do~while 실행!\n"); // 무조건 한 번 실행
 		a--;
 	} while (a > 0);
-	printf("do~while 종료\n");
+	printf("do~while 종료\n"); // 얘도 출력됨
 
 	return 0;
 }
