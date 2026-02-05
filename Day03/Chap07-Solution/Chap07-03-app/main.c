@@ -1,0 +1,29 @@
+﻿// 재귀호출 함수
+
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+void fruit(void);	// 함수 선언
+void fruit2(int);   // 종료레벨 매개변수로 받는 재귀호출 함수 정의
+int main(void) {
+
+	//fruit();
+	fruit2(1);
+
+	return 0;
+}
+
+void fruit2(int count) {
+	printf("apple\n");
+	if (count == 3) {
+		return;	// 함수 호출한 곳으로 되돌아가지만 반환값은 없음
+	}
+	fruit2(count + 1);
+}
+void fruit(void) {
+	static int i = 1;
+	printf("strawberry, %d\n", i++);
+	fruit();	// 재귀호출(자기 자신을 호출)
+
+}
+
