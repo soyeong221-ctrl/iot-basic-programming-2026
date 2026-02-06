@@ -1,0 +1,11 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="260206 기초 프로그래밍 언어 퀴즈 2/260206 기초 프로그래밍 언어 퀴즈 2.vcxproj" />
+  <Project Path="260206 기초 프로그래밍 언어 퀴즈/260206 기초 프로그래밍 언어 퀴즈.vcxproj" />
+  <Project Path="Chap10-01-app/Chap10-01-app.vcxproj" />
+  <Project Path="Chap10-02-app/Chap10-02-app.vcxproj" />
+  <Project Path="Chap10-03-app/Chap10-03-app.vcxproj" />
+</Solution>
