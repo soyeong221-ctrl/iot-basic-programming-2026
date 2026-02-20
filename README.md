@@ -248,7 +248,13 @@ IoT 개발자과정 기초 프로그래밍 언어 학습 리포지토리
 
 4. 문자열과 포인터 : [확인](./Day06/Chap12-Solution/Chap12-01-app/main.c)
     - 문자열 연산 함수 - 자주 사용하는 문자열 처리 내장함수
-    - `strlen()`, strcpy(), strncpy(), strcat(), strncat(), strcmp(), strncmp()
+    - `strlen()` : 문자열 길이 리턴함수
+    - `strcpy()`, strncpy() : 문자열 대입함수 / n은 글자 개수만큼 대입
+    - strcat(), strncat() : 문자열 합치기 함수
+    - `strcmp()`, strncmp() : 문자열 비교함수, 두 문자열이 같은지 확인
+    - strcspn() : 문자열에서 찾고자 하는 문자열에 포함된 문자를 검색, 일치할 때까지 읽어들인 문자의 개수 리턴
+    - strtok() : 패턴문자열로 기존 문자열을 자르는 함수
+    - strchr() : 문자열에서 특정 문자가 가장 먼저 나타나는 곳의 위치를 리턴하는 함수
 
 5. Tip
     - #pragma region, #pragma endregion : 소스코드 영역에서 일부내용을 확장 or 축소시키고자 할 때
@@ -415,7 +421,7 @@ IoT 개발자과정 기초 프로그래밍 언어 학습 리포지토리
         ![alt text](image-20.png)
 
 6. 파일 핸들링 현상
-    - fopen() 이후 fclose() 이전에 탐색기 등에서 파일에 접근하면 파일을 열 수 없음
+    - `fopen()` 이후 `fclose()` 이전에 탐색기 등에서 파일에 접근하면 파일을 열 수 없음
 
         ![alt text](image-21.png)
 
